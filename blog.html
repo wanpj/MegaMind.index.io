@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html  class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>MegaMind 实验室</title>
+	<link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="16x16">
+	<link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="18x18">
+	<link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="20x20">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/defult.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+	.col-lg-4,.col-md-6{
+		overflow: hidden;
+	}
+	.col-lg-4,.col-md-6.active {
+		display: block;
+	}
+	.item {
+		display: none;
+		width: 300px;
+		height: 400px;
+		overflow: hidden;
+		position: relative;
+	}
+	.item>img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.item.active {
+		display: block;
+	}
+</style>
+</head>
+<body>
+<div id="preloader">
+	<div class="loader">
+		<div class="inner"></div>
+		<div class="inner"></div>
+	</div>
+</div>
+<header class="header sticky">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-3 align-self-center">
+					<div class="logo">
+						<a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-7 col-sm-6 col-6 align-self-center">
+					<div class="d-none d-lg-block">
+						<div class="header-menu">
+							<!--AkHAN THEKE MENU KAJ SURU-->
+							<div class="header-horizontal-menu">
+								<ul class="menu-content">
+									<li><a href="index.html">主页 <i class="fas fa-angle-down"></i></a>
+									</li>
+									<li><a href="about.html">关于我们</a></li>
+									<li><a href="research.html">研究</a></li>
+									<li><a href="team.html">团队</a></li>
+									<!--<li><a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="expert.html">专家</a></li>
+                                            <li><a href="team-detail.html">Expart Detail</a></li>
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="service-detail.html">Service Detail</a></li>
+                                            <li><a href="404.html">Error</a></li>
+                                            <li><a href="testimonial.html">testimonial</a></li>
+                                        </ul>
+                                    </li>-->
+									<li><a href="#">博客 <i class="fas fa-angle-down"></i></a>
+										<ul class="sub-menu">
+											<li><a href="blog.html">博客</a></li>
+											<li><a href="blog-detail.html">Blog Detail</a></li>
+										</ul>
+									</li>
+									<li><a href="contact.html">联系我们</a></li>
+									</ul>
+								</div>
+				            </div> <!-- header menu -->
+				        </div> <!-- desktop nav -->
+						<!--Mobile Nav Menu-->
+				        <div class="d-lg-none">
+				            <!--Bar-->
+							<div class="mobile-toggle">
+								<a class="mobile-menu-open" href="javascript:;"><i class="fas fa-bars"></i></a>
+							</div>           
+				            <div class="mobile-off-canvas-menu">
+				            	<div class="mobile-logo">
+									<a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+								</div> <!-- mobile logo -->  
+				                <div class="mobile-canvas-close close-mobile-menu">
+				                    <p>Menu<i class="fas fa-times"></i></p>
+				                </div>
+				                <div class="mobile-main-menu">
+				                    <ul class="menu-content">
+										<li  class="menu-item-has-children active"><a href="#">Home <i class="fal fa-chevron-down"></i></a>
+				                            <ul class="sub-menu">
+				                                <li><a href="index.html">Home 1</a></li>
+				                                <li><a href="index2.html">Home 2</a></li>
+				                            </ul>
+				                        </li>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="service.html">Service</a></li>
+										
+										<li  class="menu-item-has-children active"><a href="#">Pages <i class="fal fa-chevron-down"></i></a>
+				                            <ul class="sub-menu">
+				                                <li><a href="expert.html">Expart</a></li>
+				                                <li><a href="team-detail.html">Expart Detail</a></li>
+												<li><a href="service.html">Service</a></li>
+												<li><a href="service-detail.html">Service Detail</a></li>
+												<li><a href="404.html">Error</a></li>
+												<li><a href="testimonial.html">testimonial</a></li>
+				                            </ul>
+				                        </li>
+				                        <li  class="menu-item-has-children active"><a href="#">Blog <i class="fal fa-chevron-down"></i></a>
+				                            <ul class="sub-menu">
+				                                <li><a href="blog.html">Blog</a></li>
+												<li><a href="blog-detail.html">Blog Detail</a></li>
+				                            </ul>
+				                        </li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+				                </div> <!-- mobile main menu -->
+				            </div> <!-- mobile off canvas menu -->
+			
+            				<div class="overlay"></div>
+    					</div>
+						<!-- mobile nav -->
+					</div>
+					<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-6  align-self-center">
+						<div class="list-area-cart-user">
+							<ul>
+								<li><a href="javascript:void(0)" id="search-btn"><i class="fas fa-search"></i></a></li>							
+								<li><a href="javascript:void(0)" id="login-btn"><i class="fas fa-user"></i></a></li>
+							</ul>
+						</div>
+
+						 <form action="#" class="search-form">
+					        <input type="search" class="form-control" id="search-box" placeholder="search here...">
+					        <button class="fas fa-search"></button>
+					    </form>
+					    <div class="login-form">
+			                <div class="form-container">
+			                	<div class="close-lgn">
+				    				<a href="javascript:void(0)" id="close-login"><i class="fas fa-times"></i></a>
+				    			</div>
+			                    <div class="form-icon"><i class="fa fa-user"></i></div>
+			                    <h3 class="title">Login</h3>
+			                    <form class="form-horizontal">
+			                        <div class="form-group">
+			                            <label>email</label>
+			                            <input class="form-control" type="email" placeholder="email address">
+			                        </div>
+			                        <div class="form-group">
+			                            <label>password</label>
+			                            <input class="form-control" type="password" placeholder="password">
+			                        </div>
+			                        <button type="button" class="btn btn-lg">Login</button>
+			                    </form>
+			                </div>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <!-- home-page -->
+    <section class="home-page" style="background-image:url(assets/img/about/home1.jpeg)">
+    	<div class="container">
+	 		<div class="row">
+	 			<div class="col-lg-12">
+	 				<div class="page-content">
+	 					<div class="page-text">
+	 						<h4>看看我们笔下的科技世界</h4>
+		 			   		 <h2>博客</h2>
+	 					</div>
+	 					<div class="page-add">
+	 						<ul>
+	 							<li class="page-active"><a  href="index.html">Home</a></li>
+	 							<li><a href="#">博客</a></li>
+	 						</ul>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</div>
+    </section>
+  		<!-- events-area -->
+	<!-- blog-news -->
+	<section class="news-area  section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-heading text-center">
+						<h4><span>博客</span></h4>
+						<h2>记录和分享</h2>
+						<p>记录是学习的痕迹，是思考的过程，是知识的总结。</p>
+					</div>
+				</div>
+			</div>
+			<div id="content" class="row pt-60" style="height: 510px;overflow: hidden;background: rgba(11,137,79,0)">
+				<div id="1"style="height:1px;background: rgba(13,202,240,0);margin-top: -100px;"></div>
+				<div id="11"class="col-lg-4 col-md-6">
+					<div class="news-single  wow fadeInUp" data-wow-delay="250ms" data-wow-duration="800ms">
+						<div class="img">
+							<img src="assets/img/blog/science1.jpg" alt="event">
+							<div class="event-date">
+								<span>05</span>
+								<small>June</small>
+							</div>
+						</div>
+						<div class="event-content">
+							<div class="time">
+								<span><i class="far fa-user"></i>作者</span>
+								<span><i class="far fa-comments"></i>15</span>
+							</div>
+							<h3><a href="blog-detail.html">文章名</a></h3>
+							<p>文章简介
+							</p>
+							<div class="read-more">
+								<a href="#"><span>了解更多信息</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="news-single  wow fadeInUp" data-wow-delay="450ms" data-wow-duration="800ms">
+						<div class="img">
+							<img src="assets/img/blog/science2.jpg" alt="event">
+							<div class="event-date">
+								<span>05</span>
+								<small>June</small>
+							</div>
+						</div>
+						<div class="event-content">
+							<div class="time">
+								<span><i class="far fa-user"></i>作者</span>
+								<span><i class="far fa-comments"></i>15</span>
+							</div>
+							<h3><a href="blog-detail.html">文章名</a></h3>
+							<p>文章简介
+							</p>
+							<div class="read-more">
+								<a href="#"><span>了解更多信息</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="news-single  wow fadeInUp" data-wow-delay="650ms" data-wow-duration="800ms">
+						<div class="img">
+							<img src="assets/img/blog/science3.jpg" alt="event">
+							<div class="event-date">
+								<span>05</span>
+								<small>June</small>
+							</div>
+						</div>
+						<div class="event-content">
+							<div class="time">
+								<span><i class="far fa-user"></i>作者</span>
+								<span><i class="far fa-comments"></i>15</span>
+							</div>
+							<h3><a href="blog-detail.html">文章名</a></h3>
+							<p>文章简介
+							</p>
+							<div class="read-more">
+								<a href="#"><span>了解更多信息</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="2"style="height:50px;background: rgba(13,202,240,0)"></div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-single blog-single2">
+						<div class="blog-img blog-img2">
+							<img src="assets/img/blog/science4.jpg" alt="blog">
+							<div class="blog-meta">
+								<ul>
+									<li class="date">5 August 2023</li>
+									<li class="admin"><a href="#">作者</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="blog-content">
+							<h4><a href="#">文章名</a></h4>
+							<p>文章简介 </p>
+							<div class="read-more">
+								<a href="#"><span>了解更多信息</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-single blog-single2">
+						<div class="blog-img blog-img2">
+							<img src="assets/img/blog/n3.jpg" alt="blog">
+							<div class="blog-meta">
+								<ul>
+									<li class="date">5 August 2023</li>
+									<li class="admin"><a href="#">作者</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="blog-content">
+							<h4><a href="#">文章名</a></h4>
+							<p>文章简介 </p>
+							<div class="read-more">
+								<a href="#"><span>了解更多信息</span></a>
+							</div>
+						</div>
+					</div>
+					</div>
+				<div class="col-lg-4 col-md-6">
+						<div class="blog-single blog-single2">
+							<div class="blog-img blog-img2">
+								<img src="assets/img/blog/n2.jpg" alt="blog">
+								<div class="blog-meta">
+									<ul>
+										<li class="date">5 August 2023</li>
+										<li class="admin"><a href="#">作者</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="blog-content">
+								<h4><a href="#">文章名</a></h4>
+								<p>文章简介</p>
+								<div class="read-more">
+									<a href="#"><span>了解更多信息</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div id="3"style="height:50px;background: rgba(13,202,240,0)"></div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-single blog-single2">
+						<div class="blog-img blog-img2">
+							<img src="assets/img/event/3.jpg" alt="blog">
+							<div class="blog-meta">
+								<ul>
+									<li class="date">5 August 2023</li>
+									<li class="admin"><a href="#">作者</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="blog-content">
+							<h4><a href="#">文章名</a></h4>
+							<p>文章简介 </p>
+							<div class="read-more">
+								<a href="#"><span>了解更多信息</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-single blog-single2">
+						<div class="blog-img blog-img2">
+							<img src="assets/img/event/2.jpg" alt="blog">
+							<div class="blog-meta">
+								<ul>
+									<li class="date">5 August 2023</li>
+									<li class="admin"><a href="#">作者</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="blog-content">
+							<h4><a href="#">文章名</a></h4>
+							<p>文章简介</p>
+							<div class="read-more">
+								<a href="#"><span>了解更多信息</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			<div class="col-md-12">
+				<div class="pagin pt-20">
+					<nav class="pagination-outer" aria-label="Page navigation">
+						<ul class="pagination">
+							<li class="pre">
+								<button class="btn2" onclick="document.getElementById('content').scrollTop -= 520;" >上一页</button>
+							</li>
+							<li class="page-item1 active"><a class="page-link" href="#1">1</a></li>
+							<li class="page-item1"><a class="page-link" href="#2">2</a></li>
+							<li class="page-item1 "><a class="page-link" href="#3">3</a></li>
+							<li class="next">
+									<button class="btn2" onclick="document.getElementById('content').scrollTop += 530;
+									document.getElementsByClassName(page-item)">下一页</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			</div>
+		</section>
+	<!-- footer-area -->
+		<!-- footer-area -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="footer-content">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="footer-single">
+								<div class="ft-heading">
+									<h4>About-us</h4>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quia at aperiam, commodi
+								 repellendus soluta sit qui, hic perferendis itaque saepe exercitationem dolorem vero maiores quas.</p>
+								 <div class="subscribes">
+									<input type="search" placeholder="Search...">
+									<input type="submit" value="Subscribe">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-single">
+								<div class="ft-heading">
+									<h4>Latest Blogs</h4>
+								</div>
+								<div class="ft-blog-single">
+									<div class="img">
+										<img src="assets/img/blog/1.jpg" alt="blog">
+									</div>
+									<div class="content">
+										<h5><a href="#">Vestibulum ipsum</a></h5>
+										<div class="cnt-date">
+											<span><i class="far fa-calendar-alt"></i> 10.00 am</span>
+										</div>
+									</div>
+								</div>
+								<div class="ft-blog-single">
+									<div class="img">
+										<img src="assets/img/blog/2.jpg" alt="blog">
+									</div>
+									<div class="content">
+										<h5><a href="#">Vestibulum ipsum</a></h5>
+										<div class="cnt-date">
+											<span><i class="far fa-calendar-alt"></i> 10.00 am</span>
+										</div>
+									</div>
+								</div>
+								<div class="ft-blog-single">
+									<div class="img">
+										<img src="assets/img/blog/3.jpg" alt="blog">
+									</div>
+									<div class="content">
+										<h5><a href="#">Vestibulum ipsum</a></h5>
+										<div class="cnt-date">
+											<span><i class="far fa-calendar-alt"></i> 10.00 am</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-single">
+								<div class="ft-heading">
+									<h4>Contact Info</h4>
+								</div>
+								<div class="footer-link">
+									<ul>
+										<li><a href="#"><i class="fas fa-envelope"></i><span>example@gmail.com</span></a></li>
+										<li><a href="#"><i class="fas fa-phone-alt"></i><span>01744444444</span></a></li>
+										<li><a href="#"><i class="fas fa-map-marker-alt"></i><span>19 Tejfaon Road H Block, Dhaka</span></a></li>
+										<li><a href="#"><i class="fas fa-tty"></i><span>7568764874785</span></a></li>
+									</ul>
+								</div>
+								<div class="ft-social">
+									<ul>
+			   							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			    						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			    						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+			    						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+			   						</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-single">
+								<div class="ft-heading">
+									<h4>Quick Contact</h4>
+								</div>
+								<div class="contact-form">
+									<form action="#">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group mb-3">
+												  <input type="text" class="form-control" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group mb-3">
+												  <input type="email" class="form-control" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-lg-12 mb-3">
+												<div class="col-lg-md">
+													<textarea  class="form-control" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="form-group">
+												<button class="btn2 btn-lg">
+				            					<span>Submit Now</span>
+				       						 </button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="bottom-content">
+						<h6>Copyright &copy;2022 BlackBerry ALL RIGHTS RESERVED</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="scroll-area">
+       <i class="fa fa-angle-up"></i>
+    </div>
+
+
+    <!-- Js File -->
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nav.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <script src="assets/js/script.js"></script>
+<script type="text/javascript">
+	//封装函数、图片显示的部分、传入获取到的div，和被点击的序号
+	function toggle(eles, active) {
+		for(var i = eles.length; i--;) {
+			eles[i].className = "page-item1"; //先让所有div隐藏
+		}
+		eles[active].className = "page-item1 active";//再让被点击的序号对应的div 显示
+	}
+		//获取按键和div
+		//var aBtn = document.getElementsByClassName("btn");
+		var aBtn = document.getElementsByClassName("page-item1");
+		var prev = document.getElementsByClassName("pre");
+		var next = document.getElementsByClassName("next");
+		var nowPage = 0; //定义当前页，默认值为0；
+	for (var i = aBtn.length; i--;) {
+			aBtn[i].tab = i;
+			aBtn[i].onclick = function () {
+				toggle(aBtn, this.tab);
+				nowPage = this.tab; //被点击后，保存当前页的序号
+			}
+		}
+	//下一页
+	next[0].onclick = function () {
+			if(nowPage<aBtn.length-1) {
+				nowPage++;
+				//nowPage %= aBtn.length;
+
+			}else{
+				nowPage=aBtn.length-1
+				alert("已是最后一页")
+			}
+		toggle(aBtn, nowPage);
+	}
+	//上一页
+	prev[0].onclick = function () {
+		nowPage--;
+		if (nowPage == -1) {
+			nowPage = 0;
+
+		}
+		toggle(aBtn, nowPage);
+	}
+
+</script>
+    
+</body>
+</html>
